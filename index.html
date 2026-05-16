@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Codex Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="pulse"></div>
+        <h1>Codex Chat</h1>
+      </div>
+      <ul class="contact-list" id="contactList"></ul>
+    </aside>
+    <main class="chat">
+      <header class="chat-header" id="chatHeader">
+        <div class="avatar" id="headerAvatar"></div>
+        <div class="info">
+          <h3 id="headerName">Select a contact</h3>
+          <span class="status" id="headerStatus">—</span>
+        </div>
+      </header>
+      <div class="messages" id="messageArea"></div>
+      <form class="input-area" id="chatForm">
+        <input type="text" id="messageInput" placeholder="Type a message..." autocomplete="off" disabled />
+        <button type="submit" id="sendBtn" disabled>Send</button>
+        <button type="button" id="replyBtn" disabled>Reply</button>
+      </form>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
